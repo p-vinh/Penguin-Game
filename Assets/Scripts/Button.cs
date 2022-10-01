@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Do something with this
 public class Button : MonoBehaviour, Interactable {
     SpriteRenderer spriteRenderer;
     public Animator animator;
