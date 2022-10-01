@@ -7,6 +7,7 @@ TagManager:
   - Player2
   - Blue
   - Pink
+  - Button
   layers:
   - Default
   - TransparentFX
@@ -15,11 +16,11 @@ TagManager:
   - Water
   - UI
   - Ground
+  - Interactable
   - Player_Blue
   - Player_Pink
   - Blue
   - Pink
-  - 
   - 
   - 
   - 

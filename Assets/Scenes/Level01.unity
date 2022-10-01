@@ -1235,6 +1235,8 @@ MonoBehaviour:
     rgba: 4278976272
   goalValuePlayer1: 0
   goalValuePlayer2: 0
+  delay: 5
+  gameHasEnded: 0
 --- !u!1 &1660113910
 GameObject:
   m_ObjectHideFlags: 0
