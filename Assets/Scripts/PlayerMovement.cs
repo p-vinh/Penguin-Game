@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
     public Rigidbody2D rigidBody2D;
-    
+    public Transform transform;
 
     // Update is called once per frame
     void Update()
@@ -50,4 +50,17 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
+    // public void OnCollisionEnter2D(Collision2D target) {
+    //     if (target.gameObject.CompareTag("Player2")) {
+    //         target.transform.position += Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+            
+    //     }
+    // }
+
+    // private void OnCollisionExit2D(Collision2D target) {
+    //     if (target.gameObject.CompareTag("Player2")) {
+    //         target.transform.parent = null;
+    //     }
+    // }
 }

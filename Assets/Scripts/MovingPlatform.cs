@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    public Transform startPosition;
     public Transform pos1, pos2;
-    Vector3 nextPos;
-    public float speed = 2;
+    public Transform startPosition;
+    public float speed;
 
+    Vector3 nextPos;
 
     // Start is called before the first frame update
     void Start()
@@ -31,5 +31,20 @@ public class MovingPlatform : MonoBehaviour
 
     private void OnDrawGizmos() {
         Gizmos.DrawLine(pos1.position, pos2.position);
+    }
+
+    void OnCollisionEnter2D(Collision2D target)
+    {
+        if (target.gameObject.CompareTag("Player") || target.gameObject.CompareTag("Player2")) {
+            target.transform.parent = this.gameObject.transform;
+        }
+    }
+
+
+
+    private void OnCollisionExit2D(Collision2D target) {
+        if (target.gameObject.CompareTag("Player") || target.gameObject.CompareTag("Player2")) {
+            target.transform.parent = null;
+        }
     }
 }

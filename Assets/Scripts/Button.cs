@@ -13,7 +13,7 @@ public class Button : MonoBehaviour, Interactable {
         ON,
         OFF
     }
-
+    
     private int state_ = (int) state.ON;
 
     void Start()
@@ -41,6 +41,9 @@ public class Button : MonoBehaviour, Interactable {
         }
     }
 
+    public void OnCollisionExit2D(Collision2D target) {
+
+    }
     public void test()
     {
         spriteRenderer.color = goalColor;
