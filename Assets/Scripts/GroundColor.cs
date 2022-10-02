@@ -39,13 +39,13 @@ public class GroundColor : MonoBehaviour
             if (target.gameObject.tag == "Player")
             {
                 spriteRenderer.color = hitPlayerColor;
-                gameObject.layer = 10;
+                gameObject.layer = 9;
                 platformEffector2D.colliderMask = 128;
             }
             else if (target.gameObject.tag == "Player2")
             {
                 spriteRenderer.color = hitPlayer2Color;
-                gameObject.layer = 11;
+                gameObject.layer = 10;
                 platformEffector2D.colliderMask = 264;
 
             }
