@@ -11,13 +11,13 @@ public class GroundColor : MonoBehaviour
     SpriteRenderer spriteRenderer;
     PlatformEffector2D platformEffector2D;
    
+   
 
     void Start()
         // the comments in the body are just notes, I tried some stuff and it wouldn't work
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         platformEffector2D = GetComponent<PlatformEffector2D>();
-        
        // if (tag == "Blue") 
             {
             //spriteRenderer.color = hitPlayerColor;
