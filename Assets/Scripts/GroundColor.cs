@@ -11,13 +11,13 @@ public class GroundColor : MonoBehaviour
     SpriteRenderer spriteRenderer;
     PlatformEffector2D platformEffector2D;
    
+   
 
     void Start()
         // the comments in the body are just notes, I tried some stuff and it wouldn't work
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         platformEffector2D = GetComponent<PlatformEffector2D>();
-        
        // if (tag == "Blue") 
             {
             //spriteRenderer.color = hitPlayerColor;
@@ -39,14 +39,14 @@ public class GroundColor : MonoBehaviour
             if (target.gameObject.tag == "Player")
             {
                 spriteRenderer.color = hitPlayerColor;
-                gameObject.layer = 10;
+                gameObject.layer = 9;
                 platformEffector2D.colliderMask = 128;
             }
             else if (target.gameObject.tag == "Player2")
             {
                 spriteRenderer.color = hitPlayer2Color;
-                gameObject.layer = 11;
-                platformEffector2D.colliderMask = 264;
+                gameObject.layer = 10;
+                platformEffector2D.colliderMask = 256;
 
             }
        // }
