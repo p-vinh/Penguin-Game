@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
     public Rigidbody2D rigidBody2D;
-    public Transform transform;
+    
 
     // Update is called once per frame
     void Update()

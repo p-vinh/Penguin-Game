@@ -38,19 +38,26 @@ public class GroundColor : MonoBehaviour
       //  {
             if (target.gameObject.tag == "Player")
             {
-                spriteRenderer.color = hitPlayerColor;
-                gameObject.layer = 9;
-                platformEffector2D.colliderMask = 128;
+                changeToBlue();
             }
             else if (target.gameObject.tag == "Player2")
             {
-                spriteRenderer.color = hitPlayer2Color;
-                gameObject.layer = 10;
-                platformEffector2D.colliderMask = 264;
-
+                changeToPink();
             }
        // }
        
+    }
+
+    void changeToBlue() {
+        spriteRenderer.color = hitPlayerColor;
+        gameObject.layer = 9;
+        platformEffector2D.colliderMask = 128;
+    }
+
+    void changeToPink() {
+        spriteRenderer.color = hitPlayer2Color;
+        gameObject.layer = 10;
+        platformEffector2D.colliderMask = 264;
     }
    
 }
